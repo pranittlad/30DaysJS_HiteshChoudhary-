@@ -12,9 +12,3 @@ console.log(string);
 
 
 
-
-
-
- 
-
-
