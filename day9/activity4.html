@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+   <img src="chnage2.jpg" id="change">
+   <br> 
+   <button id="change_it" onclick="changeIt()" style="align-items: center; padding:2px ;" >
+    CHNAGE THIS
+   </button>
+   <h1 id="add">hello pookies</h1>
+</body>
+<script>
+        function changeIt(){
+            document.getElementById('change').src='change.png';
+        } 
+const addColor = document.getElementById('add')
+addColor.style.color ='red'
+addColor.style.background ='black'
+addColor.style.fontSize ='100px'
+addColor.style.removeProperty('fontSize')
+</script>
+</html>
