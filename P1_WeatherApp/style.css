@@ -1,0 +1,130 @@
+/* style.css */
+
+/* General body and header styles (unchanged) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(47, 35, 35);
+    color: white;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.left-colum {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+#search {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+#btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn:hover {
+    background-color: #4682b4;
+}
+
+/* New temperature display styles */
+.temperature-display {
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.temperature {
+    margin-right: 5px;
+    color: #ffcc00;
+}
+
+/* Styles for the right side image and state (unchanged) */
+#right_side {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#large-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.state {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.state h3 {
+    font-size: 24px;
+    color: #f0f8ff;
+    margin: 0;
+}
+
+/* Styles for the day cards (unchanged) */
+.day {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.day_card {
+    background-color: #555;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    flex: 1 1 calc(12% - 20px);
+}
+
+.day_card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.dayod_daycard {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #f0f8ff;
+}
+
+.day_temp {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e90ff;
+}

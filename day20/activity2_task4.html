@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+
+<script>
+    localStorage.setItem('userName','joen');
+    localStorage.setItem('email','dexxy2@gmail');
+    localStorage.setItem('age','20');
+
+    function loglocalStorage() {
+        console.log('Curent localStorage content');
+        for (let i = 0; i < localStorage.length; i++) {
+            let key = localStorage.key(i);
+            console.log(`${key}: ${localStorage.getItem(key)}`); 
+        }
+    }
+    console.log('befor removal');
+    loglocalStorage();
+
+    localStorage.removeItem('email');
+    
+    console.log('after removal');
+    loglocalStorage();
+    
+</script>
+</html>

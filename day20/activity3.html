@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <script>
+        sessionStorage.setItem('name','pranit');
+        
+        let get = localStorage.getItem('name');
+
+        console.log(get);
+
+        sessionStorage.getItem
+
+        const myObject = {
+        name: "John Doe",
+        age: 30,
+        };
+        sessionStorage.setItem ('myObject', JSON.stringify(myObject))
+
+        let lelo = sessionStorage.getItem('myObject');
+        
+        let lelio = JSON.parse('lelo')
+
+        console.log(lelio);
+        
+    </script>
+</body>
+</html>

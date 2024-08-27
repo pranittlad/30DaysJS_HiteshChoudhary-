@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="select">
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+</select>
+
+<p id="displayParagraph">Select an option from the dropdown.</p>
+
+<script>
+    const select = document.getElementById('select')
+    const p = document.getElementById('displayParagraph')
+
+    select.addEventListener('change',function(){
+        const selectValue = select.value;
+        p.textContent = `you selected:${selectValue}`
+    })
+
+</script>
+</body>
+</html>

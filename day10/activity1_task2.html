@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Image Background</title>
+    <style>
+        .bg-visible {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src="toggle.jpg" alt="Example Image" width="200" height="200">
+
+    <script>
+        // Select the image element
+        const image = document.getElementById('myImage');
+
+        // Add double-click event listener to the image
+        image.addEventListener('dblclick', function() {
+            // Toggle the 'bg-visible' class
+            image.classList.toggle('bg-visible');
+        });
+    </script>
+</body>
+</html>
